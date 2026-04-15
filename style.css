@@ -87,7 +87,7 @@ justify-content: center;
     justify-content: space-between;
 }
 .container .text{
-   position: static; 
+   
    margin-top: 70px;
 }
 
@@ -130,12 +130,12 @@ justify-content: center;
   .home.container-images{
 width: 45%;
 height: 90%;
-position: relative;
+
 justify-content: center;
     align-items: center;
    }
 .home.container.images img{
-    position: absolute;
+   
     bottom: 50px;
 height: 80%;
 justify-content: center;
@@ -482,12 +482,7 @@ button:hover {
     nav{
         flex-direction: column;
     }
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-    }
+    
 }
 body{overflow-x:hidden;
 
@@ -503,3 +498,48 @@ body{overflow-x:hidden;
 
 
 
+@media (max-width: 768px) {
+
+    /* يخلي العناصر تحت بعض */
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* الصورة */
+    .container-images {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container-images img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* النص */
+    .container-texts {
+        width: 100%;
+    }
+
+    /* المينيو */
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* العناوين */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}
